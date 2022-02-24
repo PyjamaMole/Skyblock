@@ -11,8 +11,8 @@ While converting to 1.18, the mod will remove all blocks and entities<br/>
 in the old chunks. Remove the mod, convert your world and re-add <br/>
 the mod afterwards.<br/><br/>
 The mod can be dowloaded on the right under release 1.0<br/>
-This is also where you can find a recreation of the orginial<br/>
+This is also where you can find a recreation of the orginal<br/>
 skyblock 2.1 map with seed: -5013545841426130646
 
 # Requirements
-- Fabric Installer : https://fabricmc.net/use/
+Fabric Installer: https://fabricmc.net/use/
