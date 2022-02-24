@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "protosky",
+  "version": "1.1.4-PJ",
+
+  "name": "ProtoSky",
+  "description": "Barebones ProtoSky skyblock mod!",
+  "authors": [
+    "DeadlyMC",
+    "CheaterCodes",
+    "polarbub",
+    "Aqnox"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/protosky/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+    ]
+  },
+  "mixins": [
+    "mixins.protosky.json"
+  ],
+
+  "depends": {
+    "minecraft": "1.18.x",
+    "fabricloader": ">=0.12.5",
+    "java": ">=17"
+  }
+}

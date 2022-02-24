@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "protosky.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "ProtoChunkAccessor",
+    "EnderDragonFightMixin",
+    "ChunkStatusMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
