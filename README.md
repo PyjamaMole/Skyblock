@@ -18,7 +18,9 @@ containing the bare minimum items to get _all_ renewable resources. <br/>
 Although, I highly reccomend adding an iceblock and maybe pointed <br/>
 dripstone to speed up the beginning. If you're an absolute masochist, <br/>
 you can replace the dirt and sapling by a composter, elliminating 1 more <br/>
-starting item.
+starting item. Alternatively, you can start of with only lava, grass and a <br/>
+sapling to get most renewable resources. Feel free to add and/or remove <br/>
+items yourself!
 
 
 # Requirements
