@@ -1,5 +1,5 @@
 # SkyBlock
-This is a barebones version of the ProtoSky skyblock mod: https://github.com/DeadlyMC/ProtoSky  
+This is a barebones version of the ProtoSky skyblock mod: <br/>https://github.com/DeadlyMC/ProtoSky  
 Omitting the generation of the end portal frames, obsidian pillars, <br/>
 end crystals, shulkers and elytra. For all vanilla skyblock purists!<br/>
 <br/>(Note, obsidian pillars and end crystals still regenerate as normal <br/>upon resummoning the dragon.)<br/><br/>
