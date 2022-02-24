@@ -15,8 +15,8 @@ This is also where you can find a recreation of the orginal<br/>
 skyblock 2.1 map with seed: -5013545841426130646<br/><br/>
 I have also included a map that starts you off with only a chest <br/>
 containing the bare minimum items to get _all_ renewable resources. <br/>
-Although I highly reccomend adding an iceblock and maybe pointed <br/>
-dripstone to speed up the beginning. If you're an absolute masochist <br/>
+Although, I highly reccomend adding an iceblock and maybe pointed <br/>
+dripstone to speed up the beginning. If you're an absolute masochist, <br/>
 you can replace the dirt and sapling by a composter, elliminating 1 more <br/>
 starting item.
 
