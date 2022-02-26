@@ -27,4 +27,4 @@ items yourself!
 Fabric Installer: https://fabricmc.net/use/
 
 If you have any trouble with a part of the installation, <br/>I made a step by step on the process:<br/>
-https://docs.google.com/document/d/1gj5i9laqx_fZSp4XRVgS0swEioBa_JX5uYegcvl51Os/
+https://docs.google.com/document/d/1BWKdWrVqP9K3t1T7GJG-C6UjfWvbO4MiADr9DMjai00/
