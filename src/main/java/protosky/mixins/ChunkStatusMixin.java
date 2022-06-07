@@ -2,7 +2,7 @@ package protosky.mixins;
 
 import net.minecraft.server.world.ServerLightingProvider;
 import net.minecraft.server.world.ServerWorld;
-import net.minecraft.structure.StructureManager;
+import net.minecraft.structure.StructureTemplateManager;
 import net.minecraft.world.Heightmap;
 import net.minecraft.world.chunk.Chunk;
 import net.minecraft.world.chunk.ChunkStatus;
@@ -26,7 +26,7 @@ public abstract class ChunkStatusMixin
     // LIGHT
     @Inject(method = "method_20614", at = @At("HEAD"))
     //This is really not called 'onLighting' It's called 'GenerationTask'
-    private static void onLighting(ChunkStatus targetStatus, Executor executor, ServerWorld world, ChunkGenerator generator, StructureManager structureManager, ServerLightingProvider lightingProvider, Function function, List chunks, Chunk chunk, boolean bl, CallbackInfoReturnable<CompletableFuture> cir)
+    private static void onLighting(ChunkStatus targetStatus, Executor executor, ServerWorld world, ChunkGenerator generator, StructureTemplateManager structureTemplateManager, ServerLightingProvider lightingProvider, Function fullChunkConverter, List chunks, Chunk chunk, boolean bl, CallbackInfoReturnable<CompletableFuture> cir)
     {
         if(bl || !chunk.getStatus().isAtLeast(targetStatus)) {
             WorldGenUtils.clearEntities((ProtoChunk)chunk, world);

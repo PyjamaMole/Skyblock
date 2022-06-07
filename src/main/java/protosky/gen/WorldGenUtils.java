@@ -25,7 +25,7 @@ public class WorldGenUtils
         for (int i = 0; i < sections.length; i++) {
             ChunkSection chunkSection = sections[i];
             PalettedContainer<BlockState> blockStateContainer = new PalettedContainer<>(Block.STATE_IDS, Blocks.AIR.getDefaultState(), PalettedContainer.PaletteProvider.BLOCK_STATE);
-            PalettedContainer<RegistryEntry<Biome>> biomeContainer = chunkSection.getBiomeContainer();
+            PalettedContainer<RegistryEntry<Biome>> biomeContainer = (PalettedContainer<RegistryEntry<Biome>>) chunkSection.getBiomeContainer();
             int chunkPos = chunkSection.getYOffset() >> 4;
             sections[i] = new ChunkSection(chunkPos, blockStateContainer, biomeContainer);
         }
