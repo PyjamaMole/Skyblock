@@ -12,7 +12,8 @@ in the old chunks.<br/> Remove the mod, convert your world and re-add
 the mod afterwards.<br/>
 Updating between any post 1.18 versions should be fine, although I do<br/> 
 recommend backing up your world beforehand. <br/><br/>
-The mod can be downloaded on the right under release 1.2<br/>
+The mod can be downloaded via https://modrinth.com/mod/basicskyblock <br/>
+or on the right under release 1.3 <br/>
 This is also where you can find a recreation of the orginal<br/>
 skyblock 2.1 map with seed: -5013545841426130646<br/>
 (spawn chunks generated in 1.18)<br/><br/>
