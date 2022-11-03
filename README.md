@@ -1,6 +1,5 @@
 # SkyBlock
 Main page: https://modrinth.com/mod/basicskyblock <br/><br/>
-
 This is a barebones version of the ProtoSky skyblock mod: <br/>https://github.com/DeadlyMC/ProtoSky  
 Omitting the generation of the end portal frames, obsidian pillars, <br/>
 end crystals, shulkers and elytra. For all vanilla skyblock purists!<br/>
