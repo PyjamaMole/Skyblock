@@ -24,7 +24,7 @@ recommend backing up your world beforehand. <br/><br/>
 I have also included a map that starts you off with only a barrel <br/>
 containing the bare minimum items to get _all_ renewable resources. <br/>
 I have however included some items in the inventory to make early <br/>
-game more barable. Feel free to make your own selection! <br/><br/>
+game more bearable. Feel free to make your own selection! <br/><br/>
 
 
 # Requirements
