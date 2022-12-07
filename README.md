@@ -8,7 +8,7 @@ The mod can be downloaded on the left.<br/>
 You can find a recreation of the original<br/>
 skyblock 2.1 map with seed: -5013545841426130646<br/>
 at: https://github.com/PyjamaMole/Skyblock/releases/ <br/>
-(1.18 maps under v1.0 and updated 1.19 maps under v1.3)
+(1.18 maps under v1.0 and updated 1.19 maps under v1.4)
 <br/><br/>
 All blocks and entities are removed _after_ they are generated as to <br/>
 ensure that the structure bounding boxes are generated in their <br/>
