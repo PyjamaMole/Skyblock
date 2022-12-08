@@ -22,7 +22,8 @@ the mod afterwards.<br/>
 Updating between any post 1.18 versions should be fine, although I do<br/> 
 recommend backing up your world beforehand. <br/><br/>
 I have also included a map that starts you off with only a barrel <br/>
-containing the bare minimum items to get _all_ renewable resources. <br/>
+containing the bare minimum items to get _all_ renewable resources, <br/>
+and complete _all_ advancements. <br/>
 I have however included some items in the inventory to make early <br/>
 game more bearable. Feel free to make your own selection! <br/><br/>
 
