@@ -6,7 +6,7 @@ end crystals, shulkers and elytra. For all vanilla skyblock purists!<br/><br/>
 All blocks and entities are removed _after_ they are generated as to <br/>
 ensure that the structure bounding boxes are generated in their <br/>
 original position.<br/>
-The +entities version does not remove entities, although they do <br/>
+The ***_+entities_*** version does not remove entities, although they do <br/>
 fall into the void. They may be catchable using flying machines.<br/><br/>
 (Note, obsidian pillars and end crystals still regenerate as normal <br/>upon resummoning the dragon.)<br/><br/>
 The mod can be downloaded on the left.<br/>
