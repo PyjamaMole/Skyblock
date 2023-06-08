@@ -13,7 +13,7 @@ The mod can be downloaded on the left.<br/>
 You can find a recreation of the original<br/>
 skyblock 2.1 map with seed: -5013545841426130646<br/>
 at: https://github.com/PyjamaMole/Skyblock/releases/ <br/>
-(1.18 maps under v1.0 and updated 1.19 maps under v1.5)
+(1.18 maps under v1.0 and updated 1.20 maps under v1.6)
 <br/><br/>
 ***WARNING:*** do not open any pre-1.18 worlds with this mod active!<br/>
 While converting from pre 1.18 to post 1.18, the mod will remove all<br/> blocks and entities
