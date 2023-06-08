@@ -3,7 +3,6 @@
   "package": "protosky.mixins",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "ProtoChunkAccessor",
     "EnderDragonFightMixin",
     "ChunkStatusMixin"
   ],

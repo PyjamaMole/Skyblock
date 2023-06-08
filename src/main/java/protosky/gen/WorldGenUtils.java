@@ -14,7 +14,7 @@ import net.minecraft.world.chunk.ChunkSection;
 import net.minecraft.world.chunk.PalettedContainer;
 import net.minecraft.world.chunk.ProtoChunk;
 import net.minecraft.world.chunk.ReadableContainer;
-import protosky.mixins.ProtoChunkAccessor;
+//import protosky.mixins.ProtoChunkAccessor;
 
 import java.util.*;
 
@@ -27,14 +27,13 @@ public class WorldGenUtils
             ChunkSection chunkSection = sections[i];
             PalettedContainer<BlockState> blockStateContainer = new PalettedContainer<>(Block.STATE_IDS, Blocks.AIR.getDefaultState(), PalettedContainer.PaletteProvider.BLOCK_STATE);
             ReadableContainer<RegistryEntry<Biome>> biomeContainer = chunkSection.getBiomeContainer();
-            int chunkPos = chunkSection.getYOffset() >> 4;
-            sections[i] = new ChunkSection(chunkPos, blockStateContainer, biomeContainer);
+            sections[i] = new ChunkSection(blockStateContainer, biomeContainer);
         }
         for (BlockPos bePos : chunk.getBlockEntityPositions())
         {
             chunk.removeBlockEntity(bePos);
         }
-        ((ProtoChunkAccessor) chunk).getLightSources().clear();
+        //((ProtoChunkAccessor) chunk).getLightSources().clear();
         // defined in Heightmap class constructor
         int elementBits = MathHelper.ceilLog2(chunk.getHeight() + 1);
         long[] emptyHeightmap = new PackedIntegerArray(elementBits, 256).getData();

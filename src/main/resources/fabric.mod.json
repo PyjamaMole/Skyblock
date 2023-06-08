@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "protosky",
-  "version": "1.5.0-PJ2-entity",
+  "version": "1.6.0-PJ2-entity",
 
   "name": "BasicSkyblock",
   "description": "Barebones ProtoSky skyblock mod!",
@@ -29,8 +29,8 @@
   ],
 
   "depends": {
-    "minecraft": ">=1.19.4",
-    "fabricloader": ">=0.14.19",
+    "minecraft": ">=1.20",
+    "fabricloader": ">=0.14.21",
     "java": ">=17"
   }
 }

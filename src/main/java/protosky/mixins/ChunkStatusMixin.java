@@ -26,9 +26,9 @@ public abstract class ChunkStatusMixin
     // LIGHT
     @Inject(method = "method_20614", at = @At("HEAD"))
     //This is really not called 'onLighting' It's called 'GenerationTask'
-    private static void onLighting(ChunkStatus targetStatus, Executor executor, ServerWorld world, ChunkGenerator generator, StructureTemplateManager structureTemplateManager, ServerLightingProvider lightingProvider, Function fullChunkConverter, List chunks, Chunk chunk, boolean bl, CallbackInfoReturnable<CompletableFuture> cir)
+    private static void onLighting(ChunkStatus targetStatus, Executor executor, ServerWorld world, ChunkGenerator generator, StructureTemplateManager structureTemplateManager, ServerLightingProvider lightingProvider, Function fullChunkConverter, List chunks, Chunk chunk, CallbackInfoReturnable<CompletableFuture> cir)
     {
-        if(bl || !chunk.getStatus().isAtLeast(targetStatus)) {
+        if(!chunk.getStatus().isAtLeast(targetStatus)) {
             //WorldGenUtils.clearEntities((ProtoChunk)chunk, world);
             WorldGenUtils.deleteBlocks((ProtoChunk) chunk, world);
             Heightmap.populateHeightmaps(chunk, EnumSet.of(Heightmap.Type.MOTION_BLOCKING, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, Heightmap.Type.OCEAN_FLOOR, Heightmap.Type.WORLD_SURFACE));
