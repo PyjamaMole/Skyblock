@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "id": "protosky",
-  "version": "1.6.0-PJ2-entity",
+  "id": "basicskyblock",
+  "version": "1.7.0",
 
   "name": "BasicSkyblock",
   "description": "Barebones ProtoSky skyblock mod!",
@@ -9,7 +9,8 @@
     "DeadlyMC",
     "CheaterCodes",
     "polarbub",
-    "Aqnox"
+    "Aqnox",
+    "PyjamaMole"
   ],
   "contact": {
     "homepage": "",
