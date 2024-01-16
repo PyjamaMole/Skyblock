@@ -27,20 +27,21 @@ import java.util.function.Function;
 public abstract class ChunkStatusMixin
 {
     // inserting skyblock code when chunk gets lit
-    @Inject(method = "getInitializeLightingFuture", at = @At("HEAD"))
-    private static void getInitializeLightingFuture(ServerLightingProvider lightingProvider, Chunk chunk, CallbackInfoReturnable<CompletableFuture<Either<Chunk, ChunkHolder.Unloaded>>> cir)
+    @Inject(method = "method_51376", at = @At("HEAD"))
+    private static void getInitializeLightingFuture(ChunkStatus targetStatus, Executor executor, ServerWorld world, ChunkGenerator generator, StructureTemplateManager structureTemplateManager, ServerLightingProvider lightingProvider, Function fullChunkConverter, List chunks, Chunk chunk, CallbackInfoReturnable<CompletableFuture> cir)
     {
-        WorldGenUtils.deleteBlocks((ProtoChunk) chunk);
-        //WorldGenUtils.clearEntities((ProtoChunk) chunk);
+        WorldGenUtils.deleteBlocks((ProtoChunk) chunk, true);
+        WorldGenUtils.clearEntities((ProtoChunk) chunk);
         WorldGenUtils.genHeightMaps((ProtoChunk) chunk);
     }
 
-    @Inject(method = "getLightingFuture", at = @At("HEAD"))
-    private static void getLightingFuture(ServerLightingProvider lightingProvider, Chunk chunk, CallbackInfoReturnable<CompletableFuture<Either<Chunk, ChunkHolder.Unloaded>>> cir)
+    @Inject(method = "method_20614", at = @At("HEAD"))
+    private static void getLightingFuture(ChunkStatus targetStatus, Executor executor, ServerWorld world, ChunkGenerator generator, StructureTemplateManager structureTemplateManager, ServerLightingProvider lightingProvider, Function fullChunkConverter, List chunks, Chunk chunk, CallbackInfoReturnable<CompletableFuture> cir)
     {
-        WorldGenUtils.deleteBlocks((ProtoChunk) chunk);
-        //WorldGenUtils.clearEntities((ProtoChunk) chunk);
-        WorldGenUtils.genHeightMaps((ProtoChunk) chunk);
+        if(WorldGenUtils.deleteBlocks((ProtoChunk) chunk, false)) {
+            WorldGenUtils.genHeightMaps((ProtoChunk) chunk);
+            System.out.println("reset"+chunk.getPos().toString());
+        }
     }
 
     // cancelling initial spawns of entities (not including those in structures)

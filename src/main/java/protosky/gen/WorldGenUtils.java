@@ -15,15 +15,20 @@ import java.util.*;
 
 public class WorldGenUtils
 {
-    public static void deleteBlocks(ProtoChunk chunk)
+    public static boolean deleteBlocks(ProtoChunk chunk, boolean check)
     {
+
         // remove blocks
+        boolean reset = false;
         ChunkSection[] sections = chunk.getSectionArray();
         for (int i = 0; i < sections.length; i++) {
             ChunkSection chunkSection = sections[i];
-            PalettedContainer<BlockState> blockStateContainer = new PalettedContainer<>(Block.STATE_IDS, Blocks.AIR.getDefaultState(), PalettedContainer.PaletteProvider.BLOCK_STATE);
-            ReadableContainer<RegistryEntry<Biome>> biomeContainer = chunkSection.getBiomeContainer();
-            sections[i] = new ChunkSection(blockStateContainer, biomeContainer);
+            if(check || !chunkSection.isEmpty()) {
+                reset = true;
+                PalettedContainer<BlockState> blockStateContainer = new PalettedContainer<>(Block.STATE_IDS, Blocks.AIR.getDefaultState(), PalettedContainer.PaletteProvider.BLOCK_STATE);
+                ReadableContainer<RegistryEntry<Biome>> biomeContainer = chunkSection.getBiomeContainer();
+                sections[i] = new ChunkSection(blockStateContainer, biomeContainer);
+            }
         }
 
         // remove block entities
@@ -32,6 +37,7 @@ public class WorldGenUtils
             chunk.removeBlockEntity(bePos);
         }
 
+        return reset;
     }
 
 
