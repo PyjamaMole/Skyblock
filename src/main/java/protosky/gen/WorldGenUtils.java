@@ -6,6 +6,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.collection.PackedIntegerArray;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.ChunkPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.*;
 import net.minecraft.world.biome.Biome;
@@ -40,14 +41,6 @@ public class WorldGenUtils
         return reset;
     }
 
-
-    public static void clearEntities(ProtoChunk chunk)
-    {
-        // erase entities
-        chunk.getEntities().clear();
-
-    }
-
     public static void genHeightMaps(ProtoChunk chunk)
     {
 
@@ -61,4 +54,13 @@ public class WorldGenUtils
 
     }
 
+    public static boolean insideBorder(ChunkPos pos)
+    {
+        return pos.x < 1874999 && pos.x > -1875000 && pos.z < 1874999 && pos.z > -1875000;
+    }
+
+    public static boolean insideBorder(BlockPos pos)
+    {
+        return pos.getX() < 29999968 && pos.getX() > -29999969 && pos.getZ() < 29999968 && pos.getZ() > -29999969;
+    }
 }
