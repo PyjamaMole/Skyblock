@@ -1,5 +1,6 @@
 # SkyBlock
-Main page: https://modrinth.com/mod/basicskyblock <br/><br/>
+Main page: https://modrinth.com/mod/basicskyblock <br/>
+New repo: https://github.com/PyjamaMole/BasicSkyblock<br/><br/>
 This mod was loosely based off of the first version of: : <br/>https://github.com/DeadlyMC/ProtoSky  
 Omitting the generation of the end portal frames, obsidian pillars, <br/>
 end crystals, shulkers and elytra. For all vanilla skyblock purists!<br/><br/>
